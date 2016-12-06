@@ -192,6 +192,25 @@
 	 Update your raspberry pi to the latest version if you haven't done so. Use the command "sudo apt-get update. You can either 
 	 run the traffic2B program by running the command "sudo./traffic2B" or you can run the barcode scanner program by using the command
 	 "python programname.py", this will start the window for your camera and your should be able to scan the barcodes.</p>
+	 
+	 <p><b>Commands used when starting the raspberry pi</b></p>
+	 Commands: <br>
+	<li>1. Update the raspberry pi using "sudo apt-get update" and "sudo apt-get upgrade",  </li> <br>
+	<li>2. Install the python and the the python/zbar library using "sudo apt-get install python-dev" and "sudo apt-get install python-pip",</li> <br>
+	<li>3. Install pillow using "sudo apt-get install python-pip" and "sudo apt-get install python-httplib2",</li> <br>
+	<li>4. Download the zbar library from the github by click on downloads,</li><br>
+	<li>5. Unzip the folder using the extractall method, zip = ZipFile('file.zip'); zip.extractall()</li><br>
+	<li>6. Using "cd", navigate to that folder,</li><br>
+	<li>7. Execute this command once you navigate inside the folder successfully, "python setup.py install –user",</li><br>
+	<li>8. After that, download the files from the zip folder and place them inside the appropriate folder,</li><br>
+	<li>9. Compile the 3 files using the command "gcc –Wall –o executable name c_file.c – lwiringPi",</li><br>
+	<li>10. Run the program using the command "python program_name.py",</li><br>
+	
+	 <p>Make sure the executable names (.c) are the same as the ones in the bar_code.py file as they will be called from there</p>
+	<p>After following the steps from Mechanical Assembly and the commands mentioned above, you should to run the program and based on
+	the coding structure, a .txt file is created automatically. After the scanning, the barcode information is entered automatically 
+	and then the user can use the command "cat student.txt" in order to view the information on that specific txt file.</p>
+	 
 	
 	 <p><b>Please check a power up video for the traffic2B program below:</b></p>
 	 <div class="js-video [vimeo, widescreen]">
