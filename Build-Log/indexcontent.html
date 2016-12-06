@@ -198,13 +198,14 @@
 	<li>1. Update the raspberry pi using "sudo apt-get update" and "sudo apt-get upgrade",  </li> <br>
 	<li>2. Install the python and the the python/zbar library using "sudo apt-get install python-dev" and "sudo apt-get install python-pip",</li> <br>
 	<li>3. Install pillow using "sudo apt-get install python-pip" and "sudo apt-get install python-httplib2",</li> <br>
-	<li>4. Download the zbar library from the github by click on downloads,</li><br>
-	<li>5. Unzip the folder using the extractall method, zip = ZipFile('file.zip'); zip.extractall()</li><br>
-	<li>6. Using "cd", navigate to that folder,</li><br>
-	<li>7. Execute this command once you navigate inside the folder successfully, "python setup.py install –user",</li><br>
-	<li>8. After that, download the files from the zip folder and place them inside the appropriate folder,</li><br>
-	<li>9. Compile the 3 files using the command "gcc –Wall –o executable name c_file.c – lwiringPi",</li><br>
-	<li>10. Run the program using the command "python program_name.py",</li><br>
+	<li>4. install the FSWEBCAM by using the command "sudoapt-get install fswebcam" on your terminal in order to be able to check if the camera is working or not,</li> <br>
+	<li>5. Download the zbar library from the github by click on downloads,</li><br>
+	<li>6. Unzip the folder using the extractall method, zip = ZipFile('file.zip'); zip.extractall()</li><br>
+	<li>7. Using "cd", navigate to that folder,</li><br>
+	<li>8. Execute this command once you navigate inside the folder successfully, "python setup.py install –user",</li><br>
+	<li>9. After that, download the files from the zip folder and place them inside the appropriate folder,</li><br>
+	<li>10. Compile the 3 files using the command "gcc –Wall –o executable name c_file.c – lwiringPi",</li><br>
+	<li>11. Run the program using the command "python program_name.py",</li><br>
 	
 	 <p>Make sure the executable names (.c) are the same as the ones in the bar_code.py file as they will be called from there</p>
 	<p>After following the steps from Mechanical Assembly and the commands mentioned above, you should to run the program and based on
